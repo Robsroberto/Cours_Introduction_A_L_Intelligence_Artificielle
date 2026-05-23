@@ -1,0 +1,65 @@
+{
+  "slug": "introduction-a-l-intelligence-artificielle",
+  "title": "Découvrez l'Intelligence Artificielle : Fondements et Applications",
+  "description": "Apprenez les bases de l'IA, de la reconnaissance d'images à la prise de décision automatisée. Découvrez comment l'IA transforme les industries en Afrique et dans le monde.",
+  "level": "debutant",
+  "icon": "🤖",
+  "tags": [
+    "IA",
+    "Machine Learning",
+    "Data Science"
+  ],
+  "price": 5000,
+  "free_chapters": 2,
+  "version": "1.0.0",
+  "chapters": [
+    {
+      "file": "01-introduction.md",
+      "title": "Introduction à l'Intelligence Artificielle : Définitions et Enjeux"
+    },
+    {
+      "file": "02-concepts-de-base.md",
+      "title": "Comprendre les Bases : Données, Algorithmes et Modèles"
+    },
+    {
+      "file": "03-histoire-et-evolution.md",
+      "title": "Histoire de l'IA : Des Origines aux Progrès Récents"
+    },
+    {
+      "file": "04-apprentissage-automatique.md",
+      "title": "Initiation au Machine Learning : Apprentissage Supervisé"
+    },
+    {
+      "file": "05-reseaux-de-neurones.md",
+      "title": "Les Réseaux de Neurones Artificiels : Du Cerveau à la Machine"
+    },
+    {
+      "file": "06-traitement-langage-naturel.md",
+      "title": "Comprendre le Langage : Introduction au NLP"
+    },
+    {
+      "file": "07-vision-par-ordinateur.md",
+      "title": "Vision par Ordinateur : L'IA qui Voit"
+    },
+    {
+      "file": "08-ia-et-ethique.md",
+      "title": "Éthique, Biais et Responsabilité dans l'IA"
+    },
+    {
+      "file": "09-ia-pour-le-developpement.md",
+      "title": "Applications de l'IA en Afrique : Santé, Agriculture et Éducation"
+    },
+    {
+      "file": "10-outils-et-frameworks.md",
+      "title": "Outils Pratiques : Découverte des Frameworks d'IA"
+    },
+    {
+      "file": "11-projet-integrateur.md",
+      "title": "Projet Intégrateur : Créer une IA Utile pour une Communauté"
+    },
+    {
+      "file": "12-perspectives-futures.md",
+      "title": "L'Avenir de l'IA en Afrique : Opportunités et Défis"
+    }
+  ]
+}
