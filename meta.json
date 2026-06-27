@@ -1,13 +1,13 @@
 {
   "slug": "introduction-a-l-intelligence-artificielle",
   "title": "Découvrez l'Intelligence Artificielle : Fondements et Applications",
-  "description": "Apprenez les bases de l'IA, de la machine learning à la vision par ordinateur, et découvrez comment ces technologies révolutionnent le monde. Ce cours vous permettra de comprendre les principes fondamentaux de l'IA et de développer des compétences pratiques pour l'appliquer dans différents domaines.",
+  "description": "Apprenez les bases de l'intelligence artificielle et découvrez comment elle transforme les industries en Afrique. Ce cours vous initie aux concepts clés et aux applications pratiques de l'IA.",
   "level": "debutant",
   "icon": "🤖",
   "tags": [
     "IA",
     "Machine Learning",
-    "Vision par Ordinateur"
+    "Data Science"
   ],
   "price": 5000,
   "free_chapters": 2,
@@ -26,32 +26,32 @@
       "title": "Machine Learning : Principes et Applications"
     },
     {
-      "file": "04-vision-par-ordinateur.md",
-      "title": "Vision par Ordinateur : Introduction et Applications"
+      "file": "04-deep-learning.md",
+      "title": "Deep Learning : Réseaux de Neurones et Applications"
     },
     {
-      "file": "05-traitement-du-langage-naturel.md",
-      "title": "Traitement du Langage Naturel : Introduction et Applications"
+      "file": "05-vision-par-ordinateur.md",
+      "title": "Vision par Ordinateur : Principes et Applications"
     },
     {
-      "file": "06-projet-1-ia.md",
-      "title": "Projet 1 : Développement d'un Modèle de Machine Learning"
+      "file": "06-nlp.md",
+      "title": "NLP : Traitement du Langage Naturel"
     },
     {
-      "file": "07-projet-2-vision-par-ordinateur.md",
-      "title": "Projet 2 : Développement d'un Système de Vision par Ordinateur"
+      "file": "07-projet-1.md",
+      "title": "Projet 1 : Développement d'un Chatbot"
     },
     {
-      "file": "08-projet-3-traitement-du-langage-naturel.md",
-      "title": "Projet 3 : Développement d'un Système de Traitement du Langage Naturel"
+      "file": "08-projet-2.md",
+      "title": "Projet 2 : Développement d'un Système de Reconnaissance d'Images"
     },
     {
-      "file": "09-mise-en-pratique-ia.md",
-      "title": "Mise en Pratique de l'IA dans des Domaines Réels"
+      "file": "09-projet-3.md",
+      "title": "Projet 3 : Développement d'un Système de Prédiction"
     },
     {
-      "file": "10-ethique-et-responsabilite-ia.md",
-      "title": "Éthique et Responsabilité dans l'IA"
+      "file": "10-conclusion.md",
+      "title": "Conclusion et Perspectives"
     }
   ]
 }
