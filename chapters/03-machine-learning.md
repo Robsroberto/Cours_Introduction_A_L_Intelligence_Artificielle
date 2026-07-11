@@ -1,70 +1,137 @@
 ## Introduction au Machine Learning
-Le machine learning est une branche clé de l'intelligence artificielle qui permet aux ordinateurs d'apprendre à partir de données et de prendre des décisions sans être explicitement programmés. Cette technique est de plus en plus utilisée dans de nombreux domaines, tels que la reconnaissance d'images, la prédiction de séries temporelles et la classification de texte. Dans ce contexte, le machine learning est utilisé pour analyser les données et identifier des modèles, ce qui permet de prendre des décisions éclairées.
-
-### Définition du Machine Learning
-Le machine learning peut être défini comme une discipline qui vise à développer des algorithmes et des modèles capables d'apprendre à partir de données et de les appliquer à de nouvelles situations. Cela signifie que les ordinateurs peuvent apprendre à partir de leurs expériences et améliorer leurs performances au fil du temps, sans nécessiter une programmation explicite.
+Le Machine Learning est une branche de l'Intelligence Artificielle (IA) qui permet aux machines d'apprendre à partir de données et d'améliorer leurs performances sur une tâche spécifique. Cette approche est particulièrement utile lorsque les données sont nombreuses et complexes, et que les règles traditionnelles de programmation sont difficiles à définir. Le Machine Learning est utilisé dans de nombreux domaines, tels que la reconnaissance d'images, la prédiction de séries temporelles, la classification de texte, etc.
 
 ### Types de Machine Learning
-Il existe trois types principaux de machine learning : l'apprentissage supervisé, l'apprentissage non supervisé et l'apprentissage par renforcement.
+Il existe plusieurs types de Machine Learning, chacun avec ses propres objectifs et méthodes :
+* **La régression** : cette méthode consiste à prédire une valeur continue en fonction de variables d'entrée. Par exemple, prédire le prix d'une maison en fonction de sa superficie, de son emplacement, etc.
+* **La classification** : cette méthode consiste à attribuer une étiquette à un objet en fonction de ses caractéristiques. Par exemple, classer une image en fonction de son contenu (chien, chat, voiture, etc.).
+* **Le clustering** : cette méthode consiste à regrouper des objets similaires en fonction de leurs caractéristiques. Par exemple, regrouper des clients en fonction de leurs habitudes d'achat.
 
-#### Apprentissage Supervisé
-L'apprentissage supervisé est un type de machine learning où l'ordinateur apprend à partir de données étiquetées. Cela signifie que les données sont déjà classées ou étiquetées, et que l'ordinateur doit apprendre à prédire les étiquettes pour de nouvelles données. Par exemple, si nous voulons développer un système de reconnaissance d'images de chats et de chiens, nous pouvons fournir à l'ordinateur des images étiquetées de chats et de chiens, et il apprendra à reconnaître les caractéristiques de chaque animal.
+## Régression
+La régression est une méthode de Machine Learning qui consiste à prédire une valeur continue en fonction de variables d'entrée. Cette méthode est particulièrement utile lorsque les données sont nombreuses et complexes. Il existe plusieurs types de régression, tels que la régression linéaire, la régression polynomiale, la régression logarithmique, etc.
 
-#### Apprentissage Non Supervisé
-L'apprentissage non supervisé est un type de machine learning où l'ordinateur apprend à partir de données non étiquetées. Cela signifie que les données ne sont pas classées ou étiquetées, et que l'ordinateur doit trouver des modèles ou des structures dans les données. Par exemple, si nous voulons développer un système de recommandation de produits en ligne, nous pouvons fournir à l'ordinateur des données sur les achats des clients, et il apprendra à identifier les produits les plus populaires et à les recommander aux clients.
-
-#### Apprentissage par Renforcement
-L'apprentissage par renforcement est un type de machine learning où l'ordinateur apprend à partir de récompenses ou de pénalités. Cela signifie que l'ordinateur prend des décisions et reçoit des récompenses ou des pénalités en fonction de la qualité de ses décisions. Par exemple, si nous voulons développer un système de jeu d'échecs, nous pouvons fournir à l'ordinateur des règles du jeu et des récompenses pour les mouvements gagnants, et il apprendra à jouer au jeu d'échecs de manière optimale.
-
-## Algorithmes de Machine Learning
-Il existe de nombreux algorithmes de machine learning, chacun ayant ses propres forces et faiblesses. Voici quelques-uns des algorithmes les plus couramment utilisés :
-
-### Régression Linéaire
-La régression linéaire est un algorithme de machine learning qui permet de prédire une valeur continue en fonction de variables indépendantes. Par exemple, si nous voulons prédire le prix d'une maison en fonction de sa superficie et de son emplacement, nous pouvons utiliser la régression linéaire.
-
-### Arbres de Décision
-Les arbres de décision sont des algorithmes de machine learning qui permettent de classifier des données en fonction de variables indépendantes. Par exemple, si nous voulons classifier des clients en fonction de leur âge et de leur revenu, nous pouvons utiliser un arbre de décision.
-
-### Réseaux de Neurones
-Les réseaux de neurones sont des algorithmes de machine learning qui permettent de modéliser des relations complexes entre des variables indépendantes et dépendantes. Par exemple, si nous voulons développer un système de reconnaissance d'images, nous pouvons utiliser un réseau de neurones.
-
-## Exemples de Code
-Voici un exemple de code en Python qui utilise la régression linéaire pour prédire le prix d'une maison en fonction de sa superficie et de son emplacement :
+### Exemple de régression
+Supposons que nous voulions prédire le prix d'une maison en fonction de sa superficie. Nous pourrions utiliser une régression linéaire pour modéliser la relation entre la superficie et le prix. Voici un exemple de code Python utilisant la bibliothèque Scikit-learn :
 ```python
-import pandas as pd
 from sklearn.linear_model import LinearRegression
+import numpy as np
 
-# Charger les données
-data = pd.read_csv('houses.csv')
+# Définition des données
+superficie = np.array([100, 150, 200, 250, 300]).reshape(-1, 1)
+prix = np.array([200000, 300000, 400000, 500000, 600000])
 
-# Définir les variables indépendantes et dépendantes
-X = data[['superficie', 'emplacement']]
-y = data['prix']
+# Création du modèle
+modele = LinearRegression()
 
-# Créer un modèle de régression linéaire
-model = LinearRegression()
+# Entraînement du modèle
+modele.fit(superficie, prix)
 
-# Entraîner le modèle
-model.fit(X, y)
+# Prédiction du prix d'une maison de 220 m²
+prix_pred = modele.predict(np.array([[220]]))
 
-# Prédire le prix d'une maison
-prix = model.predict([[100, 2]])
-print(prix)
+print("Prix prévu : ", prix_pred)
 ```
-## Applications du Machine Learning
-Le machine learning a de nombreuses applications dans différents domaines, tels que :
+Ce code définit les données de superficie et de prix, crée un modèle de régression linéaire, l'entraîne sur les données et prédit le prix d'une maison de 220 m².
 
-### Reconnaissance d'Images
-La reconnaissance d'images est un domaine qui utilise le machine learning pour analyser et identifier les objets et les personnes dans les images. Par exemple, les applications de reconnaissance faciale utilisent le machine learning pour identifier les individus et les autoriser à accéder à des systèmes sécurisés.
+## Classification
+La classification est une méthode de Machine Learning qui consiste à attribuer une étiquette à un objet en fonction de ses caractéristiques. Cette méthode est particulièrement utile lorsque les données sont catégoriques. Il existe plusieurs types de classification, tels que la classification binaire, la classification multiclasse, etc.
 
-### Prédiction de Séries Temporelles
-La prédiction de séries temporelles est un domaine qui utilise le machine learning pour prédire les valeurs futures de séries temporelles. Par exemple, les systèmes de prévision météorologique utilisent le machine learning pour prédire les conditions météorologiques futures.
+### Exemple de classification
+Supposons que nous voulions classer des images de chiens et de chats en fonction de leurs caractéristiques. Nous pourrions utiliser une classification binaire pour modéliser la relation entre les caractéristiques et la classe. Voici un exemple de code Python utilisant la bibliothèque TensorFlow :
+```python
+import tensorflow as tf
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout, Flatten
+from tensorflow.keras.layers import Conv2D, MaxPooling2D
 
-### Classification de Texte
-La classification de texte est un domaine qui utilise le machine learning pour classifier les textes en fonction de leur contenu. Par exemple, les systèmes de spam utilisent le machine learning pour classifier les emails en fonction de leur contenu et les marquer comme spam ou non spam.
+# Chargement des données
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-## Points Clés
-* Le machine learning est une branche clé de l'intelligence artificielle qui permet aux ordinateurs d'apprendre à partir de données et de prendre des décisions sans être explicitement programmés.
-* Il existe trois types principaux de machine learning : l'apprentissage supervisé, l'apprentissage non supervisé et l'apprentissage par renforcement.
-* Les algorithmes de machine learning les plus couramment utilisés sont la régression linéaire, les arbres de décision et les réseaux de neurones.
-* Le machine learning a de nombreuses applications dans différents domaines, tels que la reconnaissance d'images, la prédiction de séries temporelles et la classification de texte.
+# Normalisation des données
+x_train = x_train.astype('float32') / 255
+x_test = x_test.astype('float32') / 255
+
+# Création du modèle
+modele = Sequential()
+modele.add(Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)))
+modele.add(MaxPooling2D((2, 2)))
+modele.add(Flatten())
+modele.add(Dense(64, activation='relu'))
+modele.add(Dropout(0.2))
+modele.add(Dense(10, activation='softmax'))
+
+# Compilation du modèle
+modele.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+# Entraînement du modèle
+modele.fit(x_train, y_train, epochs=10, batch_size=128, validation_data=(x_test, y_test))
+```
+Ce code charge les données MNIST, normalise les données, crée un modèle de classification binaire, le compile et l'entraîne sur les données.
+
+## Clustering
+Le clustering est une méthode de Machine Learning qui consiste à regrouper des objets similaires en fonction de leurs caractéristiques. Cette méthode est particulièrement utile lorsque les données sont nombreuses et complexes. Il existe plusieurs types de clustering, tels que le clustering hiérarchique, le clustering non hiérarchique, etc.
+
+### Exemple de clustering
+Supposons que nous voulions regrouper des clients en fonction de leurs habitudes d'achat. Nous pourrions utiliser un clustering non hiérarchique pour modéliser la relation entre les caractéristiques et les groupes. Voici un exemple de code Python utilisant la bibliothèque Scikit-learn :
+```python
+from sklearn.cluster import KMeans
+import numpy as np
+
+# Définition des données
+donnees = np.array([[1, 2], [1, 4], [1, 0], [4, 2], [4, 4], [4, 0]])
+
+# Création du modèle
+modele = KMeans(n_clusters=2)
+
+# Entraînement du modèle
+modele.fit(donnees)
+
+# Prédiction des groupes
+groupes = modele.predict(donnees)
+
+print("Groupes : ", groupes)
+```
+Ce code définit les données, crée un modèle de clustering non hiérarchique, l'entraîne sur les données et prédit les groupes.
+
+## Utilisation des bibliothèques de Machine Learning
+Il existe plusieurs bibliothèques de Machine Learning qui peuvent être utilisées pour développer des modèles de prédiction et de classification. Les bibliothèques les plus couramment utilisées sont Scikit-learn, TensorFlow et PyTorch.
+
+### Exemple d'utilisation de Scikit-learn
+Scikit-learn est une bibliothèque de Machine Learning qui fournit une large gamme d'algorithmes pour la classification, la régression, le clustering, etc. Voici un exemple de code Python qui utilise Scikit-learn pour développer un modèle de classification binaire :
+```python
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+
+# Chargement des données
+donnees = load_iris()
+x = donnees.data
+y = donnees.target
+
+# Séparation des données en entraînement et en test
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+
+# Création du modèle
+modele = LogisticRegression()
+
+# Entraînement du modèle
+modele.fit(x_train, y_train)
+
+# Prédiction des classes
+y_pred = modele.predict(x_test)
+
+# Évaluation du modèle
+accuracy = accuracy_score(y_test, y_pred)
+
+print("Précision : ", accuracy)
+```
+Ce code charge les données Iris, sépare les données en entraînement et en test, crée un modèle de classification binaire, l'entraîne sur les données et évalue sa précision.
+
+## Points clés
+* Le Machine Learning est une branche de l'Intelligence Artificielle qui permet aux machines d'apprendre à partir de données et d'améliorer leurs performances sur une tâche spécifique.
+* Il existe plusieurs types de Machine Learning, tels que la régression, la classification et le clustering.
+* Les bibliothèques de Machine Learning les plus couramment utilisées sont Scikit-learn, TensorFlow et PyTorch.
+* Les modèles de Machine Learning peuvent être entraînés sur des données et évalués en fonction de leur précision.
+* Le Machine Learning est utilisé dans de nombreux domaines, tels que la reconnaissance d'images, la prédiction de séries temporelles, la classification de texte, etc.
