@@ -1,8 +1,8 @@
 {
   "slug": "introduction-a-l-intelligence-artificielle",
-  "title": "Découvrez l'Intelligence Artificielle : Fondements et Applications",
-  "description": "Apprenez les bases de l'intelligence artificielle et découvrez comment elle transforme les industries en Afrique. Ce cours vous initie aux concepts clés et aux applications pratiques de l'IA.",
-  "level": "debutant",
+  "title": "Développez vos compétences en Intelligence Artificielle",
+  "description": "Découvrez les fondements de l'IA et apprenez à développer des modèles de machine learning pour résoudre des problèmes africains. Ce cours vous permettra de comprendre les concepts clés de l'IA et de les appliquer dans des cas concrets.",
+  "level": "débutant",
   "icon": "🤖",
   "tags": [
     "IA",
@@ -19,39 +19,47 @@
     },
     {
       "file": "02-concepts-de-base.md",
-      "title": "Concepts de Base de l'Intelligence Artificielle"
+      "title": "Concepts de base de l'Intelligence Artificielle"
     },
     {
       "file": "03-machine-learning.md",
-      "title": "Machine Learning : Principes et Applications"
+      "title": "Machine Learning : principes et applications"
     },
     {
       "file": "04-deep-learning.md",
-      "title": "Deep Learning : Réseaux de Neurones et Applications"
+      "title": "Deep Learning : principes et applications"
     },
     {
-      "file": "05-vision-par-ordinateur.md",
-      "title": "Vision par Ordinateur : Principes et Applications"
+      "file": "05-traitement-du-langage-naturel.md",
+      "title": "Traitement du langage naturel : principes et applications"
     },
     {
-      "file": "06-nlp.md",
-      "title": "NLP : Traitement du Langage Naturel"
+      "file": "06-projet-1.md",
+      "title": "Projet 1 : Développement d'un modèle de prédiction"
     },
     {
-      "file": "07-projet-1.md",
-      "title": "Projet 1 : Développement d'un Chatbot"
+      "file": "07-projet-2.md",
+      "title": "Projet 2 : Développement d'un modèle de reconnaissance d'images"
     },
     {
-      "file": "08-projet-2.md",
-      "title": "Projet 2 : Développement d'un Système de Reconnaissance d'Images"
+      "file": "08-projet-3.md",
+      "title": "Projet 3 : Développement d'un chatbot"
     },
     {
-      "file": "09-projet-3.md",
-      "title": "Projet 3 : Développement d'un Système de Prédiction"
+      "file": "09-mise-en-production.md",
+      "title": "Mise en production d'un modèle d'IA"
     },
     {
-      "file": "10-conclusion.md",
-      "title": "Conclusion et Perspectives"
+      "file": "10-maintenance-et-mise-a-jour.md",
+      "title": "Maintenance et mise à jour d'un modèle d'IA"
+    },
+    {
+      "file": "11-cas-d-etude.md",
+      "title": "Cas d'étude : applications de l'IA en Afrique"
+    },
+    {
+      "file": "12-conclusion.md",
+      "title": "Conclusion : les perspectives de l'IA en Afrique"
     }
   ]
 }
