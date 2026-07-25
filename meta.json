@@ -1,8 +1,8 @@
 {
   "slug": "introduction-a-l-intelligence-artificielle",
-  "title": "Développez vos compétences en Intelligence Artificielle",
-  "description": "Découvrez les fondements de l'IA et apprenez à développer des modèles de machine learning pour résoudre des problèmes africains. Ce cours vous permettra de comprendre les concepts clés de l'IA et de les appliquer dans des cas concrets.",
-  "level": "débutant",
+  "title": "Découvrez l'Intelligence Artificielle : Fondements et Applications",
+  "description": "Apprenez les bases de l'IA, de la machine learning aux réseaux de neurones, et découvrez comment ces technologies révolutionnent l'industrie. Ce cours vous permettra de comprendre les principes et les applications de l'IA dans différents domaines.",
+  "level": "debutant",
   "icon": "🤖",
   "tags": [
     "IA",
@@ -19,47 +19,39 @@
     },
     {
       "file": "02-concepts-de-base.md",
-      "title": "Concepts de base de l'Intelligence Artificielle"
+      "title": "Concepts de Base de l'Intelligence Artificielle"
     },
     {
       "file": "03-machine-learning.md",
-      "title": "Machine Learning : principes et applications"
+      "title": "Machine Learning : Principes et Applications"
     },
     {
-      "file": "04-deep-learning.md",
-      "title": "Deep Learning : principes et applications"
+      "file": "04-reseaux-de-neurones.md",
+      "title": "Réseaux de Neurones : Fondements et Applications"
     },
     {
-      "file": "05-traitement-du-langage-naturel.md",
-      "title": "Traitement du langage naturel : principes et applications"
+      "file": "05-apprentissage-profond.md",
+      "title": "Apprentissage Profond : Principes et Applications"
     },
     {
-      "file": "06-projet-1.md",
-      "title": "Projet 1 : Développement d'un modèle de prédiction"
+      "file": "06-projet-1-ia.md",
+      "title": "Projet 1 : Développement d'un Système de Reconnaissance d'Images"
     },
     {
-      "file": "07-projet-2.md",
-      "title": "Projet 2 : Développement d'un modèle de reconnaissance d'images"
+      "file": "07-ia-et-donnees.md",
+      "title": "Intelligence Artificielle et Données : Collecte, Prétraitement et Analyse"
     },
     {
-      "file": "08-projet-3.md",
-      "title": "Projet 3 : Développement d'un chatbot"
+      "file": "08-projet-2-ia.md",
+      "title": "Projet 2 : Développement d'un Chatbot à l'aide de l'Apprentissage Profond"
     },
     {
-      "file": "09-mise-en-production.md",
-      "title": "Mise en production d'un modèle d'IA"
+      "file": "09-ia-et-ethique.md",
+      "title": "Intelligence Artificielle et Éthique : Enjeux et Responsabilités"
     },
     {
-      "file": "10-maintenance-et-mise-a-jour.md",
-      "title": "Maintenance et mise à jour d'un modèle d'IA"
-    },
-    {
-      "file": "11-cas-d-etude.md",
-      "title": "Cas d'étude : applications de l'IA en Afrique"
-    },
-    {
-      "file": "12-conclusion.md",
-      "title": "Conclusion : les perspectives de l'IA en Afrique"
+      "file": "10-projet-3-ia.md",
+      "title": "Projet 3 : Développement d'un Système de Recommandation à l'aide de l'IA"
     }
   ]
 }
